@@ -11,17 +11,17 @@ import Card from './components/Card'
 function App() {
   const [product, setProduct] = useState([])
 
-  useEffect(() => {
-    fetch('https://dummyjson.com/products')
-      .then(res => res.json())
-      .then((data) => setProduct(data.products));
-  }, [])
+  // useEffect(() => {
+  //   fetch('https://dummyjson.com/products')
+  //     .then(res => res.json())
+  //     .then((data) => setProduct(data.products));
+  // }, [])
 
   return (
 
     <>
       <Banner></Banner>
-      <div className='container'>
+      {/* <div className='container'>
         <div className=' mt-[25px]  flex flex-wrap justify-between  gap-2 '>
 
           {
@@ -39,8 +39,8 @@ function App() {
             })
           }
 
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </>
   )
 }
